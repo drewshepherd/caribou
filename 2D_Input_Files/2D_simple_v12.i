@@ -460,11 +460,8 @@
   file_base = 2D_Paraview/2D_simple_v12_out
   output_initial = true
   exodus = true
-  [./console]
-    type = Console
-    perf_log = true
-   linear_residuals = false
-  [../]
+  print_linear_residuals = true
+  print_perf_log = true
 []
 
 
