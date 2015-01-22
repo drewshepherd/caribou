@@ -404,11 +404,8 @@
   file_base = 3D_Paraview/3D_simple_v5_out
   output_initial = true
   exodus = true
-  [./console]
-		type = Console
-    perf_log = true
-		linear_residuals = false
-  [../]
+  print_linear_residuals = true
+  print_perf_log = true
 []
 
 

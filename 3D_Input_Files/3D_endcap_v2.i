@@ -432,11 +432,7 @@
   file_base = 3D_Paraview/3D_endcap_v2_out
   output_initial = true
   exodus = true
-  [./console]
-    type = Console
-    perf_log = true
-#   linear_residuals = true
-  [../]
+  print_perf_log = true
 []
 
 
