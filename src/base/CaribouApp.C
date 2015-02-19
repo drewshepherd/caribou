@@ -51,6 +51,7 @@ CaribouApp::~CaribouApp()
 {
 }
 
+extern "C" void CaribouApp__registerApps() { CaribouApp::registerApps(); }
 void
 CaribouApp::registerApps()
 {
