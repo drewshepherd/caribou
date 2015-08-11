@@ -28,9 +28,8 @@ InputParameters validParams<SheathMechanicalMaterial>()
    return params;
 }
 
-SheathMechanicalMaterial::SheathMechanicalMaterial( const std::string & name,
-                                                        InputParameters parameters ) :
-  SolidModel( name, parameters ),
+SheathMechanicalMaterial::SheathMechanicalMaterial(const InputParameters & parameters) :
+  SolidModel(parameters),
 	_temp(coupledValue("temp")),
 	_relative_tolerance(parameters.get<Real>("relative_tolerance")),
 	_absolute_tolerance(parameters.get<Real>("absolute_tolerance")),

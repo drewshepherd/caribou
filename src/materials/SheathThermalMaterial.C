@@ -20,9 +20,8 @@ InputParameters validParams<SheathThermalMaterial>()
   return params;
 }
 
-SheathThermalMaterial::SheathThermalMaterial(const std::string & name,
-                       InputParameters parameters) :
-    	Material(name, parameters),
+SheathThermalMaterial::SheathThermalMaterial(const InputParameters & parameters) :
+    	Material(parameters),
 	_model_thermal_conductivity(getParam<bool>("model_thermal_conductivity")),
 	_model_specific_heat(getParam<bool>("model_specific_heat")),
   _temp(coupledValue("temp")),

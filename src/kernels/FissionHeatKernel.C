@@ -16,8 +16,8 @@ InputParameters validParams<FissionHeatKernel>()
   return params;
 }
 
-FissionHeatKernel::FissionHeatKernel(const std::string & name, InputParameters parameters)
-  :Kernel(name, parameters),
+FissionHeatKernel::FissionHeatKernel(const InputParameters & parameters)
+  :Kernel(parameters),
 	_q_fission(getMaterialProperty<Real>("q_fission"))
 {
 }

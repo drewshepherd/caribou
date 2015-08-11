@@ -13,8 +13,7 @@ InputParameters validParams<PelletThermalMaterial>();
 class PelletThermalMaterial : public Material
 {
 public:
-  PelletThermalMaterial(const std::string & name,
-      InputParameters parameters);
+  PelletThermalMaterial(const InputParameters & parameters);
 
   virtual void initStatefulProperties(unsigned n_points);
 

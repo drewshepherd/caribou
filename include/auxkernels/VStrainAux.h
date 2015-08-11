@@ -13,7 +13,7 @@ class VStrainAux : public AuxKernel
 {
 public:
 
-  VStrainAux(const std::string & name, InputParameters parameters);
+  VStrainAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

@@ -20,8 +20,8 @@ InputParameters validParams<DensificationFractionKernel>()
   return params;
 }
 
-DensificationFractionKernel::DensificationFractionKernel(const std::string & name, InputParameters parameters) 
-:Kernel(name, parameters),
+DensificationFractionKernel::DensificationFractionKernel(const InputParameters & parameters) 
+:Kernel(parameters),
 	
 	_model_densification_fraction(getParam<bool>("model_densification_fraction")),
   _temp(coupledValue("temp")),

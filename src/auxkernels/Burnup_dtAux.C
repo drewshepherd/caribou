@@ -17,8 +17,8 @@ InputParameters validParams<Burnup_dtAux>()
 	return params;
 }
 
-Burnup_dtAux::Burnup_dtAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+Burnup_dtAux::Burnup_dtAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 
 	_model_burnup_dt(getParam<bool>("model_burnup_dt")),
 

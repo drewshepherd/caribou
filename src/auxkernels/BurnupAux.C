@@ -16,8 +16,8 @@ InputParameters validParams<BurnupAux>()
 	return params;
 }
 
-BurnupAux::BurnupAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+BurnupAux::BurnupAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 
 	_model_burnup(getParam<bool>("model_burnup")),
 

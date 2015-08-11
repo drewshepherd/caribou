@@ -11,7 +11,7 @@ InputParameters validParams<CaribouApp>();
 class CaribouApp : public MooseApp
 {
 public:
-  CaribouApp(const std::string & name, InputParameters parameters);
+  CaribouApp(InputParameters parameters);
   virtual ~CaribouApp();
 
   static void registerApps();

@@ -16,8 +16,8 @@ InputParameters validParams<VStrainAux>()
 	return params;
 }
 
-VStrainAux::VStrainAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+VStrainAux::VStrainAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 	_densificationF(coupledValue("densification_fraction")),
 	_initial_porosity(getParam<Real>("initial_porosity")),
 	_model_vstrain(getParam<bool>("model_vstrain")),

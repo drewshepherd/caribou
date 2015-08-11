@@ -13,7 +13,7 @@ class TestAux : public AuxKernel
 {
 public:
 
-  TestAux(const std::string & name, InputParameters parameters);
+  TestAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

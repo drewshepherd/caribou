@@ -16,8 +16,7 @@ InputParameters validParams<SheathThermalMaterial>();
 class SheathThermalMaterial : public Material
 {
 public:
-  SheathThermalMaterial(const std::string & name,
-      InputParameters parameters);
+  SheathThermalMaterial(const InputParameters & parameters);
 
 protected:
   virtual void computeProperties();

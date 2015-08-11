@@ -15,7 +15,7 @@ class BurnupAux : public AuxKernel
 {
 public:
 
-  BurnupAux(const std::string & name, InputParameters parameters);
+  BurnupAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

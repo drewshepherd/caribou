@@ -46,8 +46,8 @@ InputParameters validParams<GapHeatConductanceMaterial>()
   return params;
 }
 
-GapHeatConductanceMaterial::GapHeatConductanceMaterial(const std::string & name, InputParameters parameters)
-  :Material(name, parameters),
+GapHeatConductanceMaterial::GapHeatConductanceMaterial(const InputParameters & parameters)
+  :Material(parameters),
    _appended_property_name( getParam<std::string>("appended_property_name") ),
    _temp(coupledValue("variable")),
    _k_f(coupledValue("k_pellets")),

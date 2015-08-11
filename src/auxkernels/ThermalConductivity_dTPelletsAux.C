@@ -17,8 +17,8 @@ InputParameters validParams<ThermalConductivity_dTPelletsAux>()
 	return params;
 }
 
-ThermalConductivity_dTPelletsAux::ThermalConductivity_dTPelletsAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+ThermalConductivity_dTPelletsAux::ThermalConductivity_dTPelletsAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 
 	_model_k_dT(getParam<bool>("model_k_dT")),
   _temp(coupledValue("temp")),

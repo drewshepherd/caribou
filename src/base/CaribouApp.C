@@ -33,10 +33,9 @@ InputParameters validParams<CaribouApp>()
   return params;
 }
 
-CaribouApp::CaribouApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+CaribouApp::CaribouApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);

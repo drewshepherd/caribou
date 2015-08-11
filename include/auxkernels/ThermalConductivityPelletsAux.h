@@ -14,7 +14,7 @@ class ThermalConductivityPelletsAux : public AuxKernel
 {
 public:
 
-  ThermalConductivityPelletsAux(const std::string & name, InputParameters parameters);
+  ThermalConductivityPelletsAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

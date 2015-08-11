@@ -16,8 +16,8 @@ InputParameters validParams<ThermalConductivity_dTSheathAux>()
 	return params;
 }
 
-ThermalConductivity_dTSheathAux::ThermalConductivity_dTSheathAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+ThermalConductivity_dTSheathAux::ThermalConductivity_dTSheathAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 
 	_model_k_dT(getParam<bool>("model_k_dT")),
   _temp(coupledValue("temp"))

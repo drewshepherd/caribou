@@ -17,7 +17,7 @@ class FissionHeatMaterial : public Material
 {
 public:
 	//Constructor - obtains the values of burnup, enrichment and pellet radius from the input file
-	FissionHeatMaterial(const std::string & name, InputParameters parameters);
+	FissionHeatMaterial(const InputParameters & parameters);
 
 protected:
 	double interp2(const double _cons_array[][10]);

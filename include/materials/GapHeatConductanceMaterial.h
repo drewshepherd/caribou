@@ -11,7 +11,7 @@ class GapHeatConductanceMaterial :
 {
 public:
 
-  GapHeatConductanceMaterial(const std::string & name, InputParameters parameters);
+  GapHeatConductanceMaterial(const InputParameters & parameters);
 
   virtual ~GapHeatConductanceMaterial(){}
 

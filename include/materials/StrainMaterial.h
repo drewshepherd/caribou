@@ -18,7 +18,7 @@ InputParameters validParams<StrainMaterial>();
 class StrainMaterial : public SolidModel
 {
 public:
-  StrainMaterial( const std::string & name, InputParameters parameters);
+  StrainMaterial(const InputParameters & parameters);
   virtual void modifyStrainIncrement();
 	virtual Real computeGFP_dT(const Real density, const Real enrichment, const Real burnup, const Real burnup_dt, const Real temp);
 	virtual void computeStress();

@@ -24,8 +24,8 @@ InputParameters validParams<StrainMaterial>()
   return params;
 }
 
-StrainMaterial::StrainMaterial( const std::string & name, InputParameters parameters ) :
-  SolidModel( name, parameters ),
+StrainMaterial::StrainMaterial(const InputParameters & parameters) :
+  SolidModel(parameters),
 
   _model_thermal_expansion(getParam<bool>("model_thermal_expansion")),
 	_model_youngs_modulus(getParam<bool>("model_youngs_modulus")),

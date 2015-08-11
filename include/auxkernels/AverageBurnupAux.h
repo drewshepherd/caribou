@@ -15,7 +15,7 @@ class AverageBurnupAux : public AuxKernel
 {
 public:
 
-  AverageBurnupAux(const std::string & name, InputParameters parameters);
+  AverageBurnupAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

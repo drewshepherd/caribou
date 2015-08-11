@@ -27,8 +27,8 @@ InputParameters validParams<FissionHeatMaterial>()
 	return params;
 }
 //Constructor - obtains the values of burnup, enrichment and pellet radius from the input file
-FissionHeatMaterial::FissionHeatMaterial(const std::string & name, InputParameters parameters)
-  :Material(name, parameters),
+FissionHeatMaterial::FissionHeatMaterial(const InputParameters & parameters)
+  :Material(parameters),
 
   _linear_power(&getFunction("linear_power")),
 	_model_Qfission(getParam<bool>("model_Qfission")),

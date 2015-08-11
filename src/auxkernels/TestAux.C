@@ -24,8 +24,8 @@ InputParameters validParams<TestAux>()
 	return params;
 }
 
-TestAux::TestAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+TestAux::TestAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 
 	_model_density(getParam<bool>("model_density")),
 	_model_q_fission(getParam<bool>("model_q_fission")),

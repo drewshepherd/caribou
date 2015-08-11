@@ -14,7 +14,7 @@ class ThermalConductivity_dTSheathAux : public AuxKernel
 {
 public:
 
-  ThermalConductivity_dTSheathAux(const std::string & name, InputParameters parameters);
+  ThermalConductivity_dTSheathAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

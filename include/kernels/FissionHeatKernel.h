@@ -15,7 +15,7 @@ class FissionHeatKernel : public Kernel
 {
 public:
 
-  FissionHeatKernel(const std::string & name, InputParameters parameters);
+  FissionHeatKernel(const InputParameters & parameters);
 
 protected:
   virtual Real computeQpResidual();

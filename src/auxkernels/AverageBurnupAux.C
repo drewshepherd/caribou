@@ -21,8 +21,8 @@ InputParameters validParams<AverageBurnupAux>()
 	return params;
 }
 
-AverageBurnupAux::AverageBurnupAux(const std::string & name, InputParameters parameters)
-  :AuxKernel(name, parameters),
+AverageBurnupAux::AverageBurnupAux(const InputParameters & parameters)
+  :AuxKernel(parameters),
 
 	_linear_power_time(&getFunction("linear_power_time")), //in units of [W/m]
 	_linear_power_burnup(&getFunction("linear_power_burnup")), //in units of [W/m]

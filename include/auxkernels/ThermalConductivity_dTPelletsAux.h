@@ -14,7 +14,7 @@ class ThermalConductivity_dTPelletsAux : public AuxKernel
 {
 public:
 
-  ThermalConductivity_dTPelletsAux(const std::string & name, InputParameters parameters);
+  ThermalConductivity_dTPelletsAux(const InputParameters & parameters);
 protected:
   virtual Real computeValue();
   virtual void computeChassieUnirradThCond(const Real temp, Real & cond0, Real & cond0_dT);

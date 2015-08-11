@@ -12,8 +12,7 @@ InputParameters validParams<SheathMechanicalMaterial>();
 class SheathMechanicalMaterial : public SolidModel
 {
 public:
-  SheathMechanicalMaterial( const std::string & name,
-                 InputParameters parameters );
+  SheathMechanicalMaterial(const InputParameters & parameters);
 
 protected:
   const VariableValue  & _temp;

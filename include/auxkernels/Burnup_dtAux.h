@@ -15,7 +15,7 @@ class Burnup_dtAux : public AuxKernel
 {
 public:
 
-  Burnup_dtAux(const std::string & name, InputParameters parameters);
+  Burnup_dtAux(const InputParameters & parameters);
 
 protected:
   virtual Real computeValue();

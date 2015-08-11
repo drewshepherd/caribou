@@ -15,8 +15,7 @@ InputParameters validParams<DensificationFractionKernel>();
 class DensificationFractionKernel : public Kernel
 {
 public:
-  DensificationFractionKernel(const std::string & name,
-      InputParameters parameters);
+  DensificationFractionKernel(const InputParameters & parameters);
 
 protected:
   virtual Real computeQpResidual();
